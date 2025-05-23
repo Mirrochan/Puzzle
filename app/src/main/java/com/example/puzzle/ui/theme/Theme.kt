@@ -9,6 +9,7 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
@@ -32,7 +33,16 @@ private val LightColorScheme = lightColorScheme(
     onSurface = Color(0xFF1C1B1F),
     */
 )
-
+val PastelColorScheme = lightColorScheme(
+    primary = Color(0xFFB5EAEA),
+    secondary = Color(0xFFFFD6E0),
+    background = Color(0xFFFFFBF5),
+    surface = Color(0xFFFFFFFF),
+    onPrimary = Color(0xFF344955),
+    onSecondary = Color(0xFF344955),
+    onBackground = Color(0xFF344955),
+    onSurface = Color(0xFF344955)
+)
 @Composable
 fun PuzzleTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
